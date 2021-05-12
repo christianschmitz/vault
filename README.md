@@ -38,3 +38,6 @@ The encrypted result is base64 encoded so you can easily copy/paste it.
 
 # Using IPFS
 If you decide to use IPFS for storage I recommend you take a look at IPNS and DNSLink.
+
+# TODO
+Running as  daemon and automatically pushing changes to IPFS
