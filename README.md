@@ -1,8 +1,11 @@
 # About vault
 AES256 file encryption tool for linux. 
-Use this when backing up sensitive files to the cloud.
 
-Pick a strong password (tips below), so that the encrypted data can even be stored in public place (like IPFS).
+Use this to back up sensitive files to the cloud.
+
+Pick a pin-code and a strong password.
+
+The vault configuration is also protected by a pin code, which you will need every time you use vault.
 
 # Compile and install
 ```
@@ -20,8 +23,10 @@ cp ./build/vault /usr/local/bin
 vault enc <input_file> <output_file>
 ```
 
-Put your password in `~/.config/vault/key`.
-The permissions of `~/.config/vault/key` must be such that only the owner can read it.
+The first time you use the program you need to pick a password and a pin code.
+
+# Where your password is stored
+The permissions of `~/.config/vault/config` must be such that only the owner can read it.
 
 # Picking a safe password
 1. pick some material (books, song lyrics, a story about your childhood, a dream)
